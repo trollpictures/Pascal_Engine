@@ -4,12 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Mesh;
+using InternalVars;
 
 namespace Physics
 {
-    class PhysicsCore
+    public class PhysicsCore
     {
-        void StaticObj() 
+        float3 GlobalSpace;
+        float3 LocalSpace;
+        void StaticObj()
         {
             
         }
@@ -17,9 +20,18 @@ namespace Physics
         {
             
         }
-        float Time() 
+    }
+    public class Time
+    {
+        public float time() 
         {
-            return 0.000f;
+            float ret = 0.00f;
+            for (; ; ret += 0.01f)
+            {
+                return ret;
+                Console.WriteLine(ret);
+            }
         }
+        
     }
 }

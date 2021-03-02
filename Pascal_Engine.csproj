@@ -51,6 +51,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="GameBase.cs" />
+    <Compile Include="InternalVars.cs" />
     <Compile Include="Mesh.cs" />
     <Compile Include="Physics.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

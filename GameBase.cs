@@ -8,6 +8,7 @@ using Render;
 using Sound;
 using Mesh;
 using Physics;
+using InternalVars;
 
 namespace Pascal_Engine
 {
@@ -15,8 +16,11 @@ namespace Pascal_Engine
     {
         static void Main(string[] args)
         {
+            PhysicsCore Phys = new PhysicsCore();
+            Time t = new Time();
             RenderCore Game = new RenderCore();
             Game.Run();
+            t.time();
         }
     }
 }
